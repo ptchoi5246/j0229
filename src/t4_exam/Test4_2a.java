@@ -3,7 +3,7 @@ package t4_exam;
 import java.util.Scanner;
 
 // 1개의 주사위를 던졌을때 나오는 숫자 맞추기 게임
-public class Test4_2_p {
+public class Test4_2a {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int su , rand;

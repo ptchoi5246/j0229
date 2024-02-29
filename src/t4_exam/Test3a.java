@@ -3,7 +3,7 @@ package t4_exam;
 import java.util.Scanner;
 
 // 숫자 맞추기 게임 (1~100까지의 자연수)
-public class Test3_p {
+public class Test3a {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
