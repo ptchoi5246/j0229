@@ -10,7 +10,7 @@ public class Test3_3 {
 			System.out.println(i + ".안녕");
 			
 			if(i == 10) break;
-		} //빨간 버튼 break
+		}
 				
 	}
 }
