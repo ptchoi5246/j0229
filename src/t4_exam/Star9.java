@@ -1,4 +1,7 @@
 package t4_exam;
+
+import java.util.Scanner;
+
 /*
         * 
 		   ***
@@ -13,24 +16,42 @@ package t4_exam;
 
 public class Star9 {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); //중간 별의 갯수를 입력받는다.
 		
-		for(int i=1; i<=5; i++) {
-			for(int j=1; j<=i-1; j++) {
-				System.out.print(" ");
-			}
-			for(int j=1; j<=6-i; j++) {
-				System.out.print("*");
-			}
-			System.out.println();
+		sc.close();
+	}
+}	
+/*
+ 		
+		
+		while(true) {
+			System.out.println("홀수인 숫자를 입력하세요.  ");
+			mid = sc.nextInt();
+			if(mid % 2 ==0) System.out.println("짝수를 입력했습니다. 홀수를 입력해주세요\n");
+			else break;
 		}
 		
+		for(int i=1; i<=mid; i+=2) { //중간 숫자를 입력 받았으니 입력받은 숫자만큼 반복
+			for(int j=1; j<=(mid-1)/2; j++) { //빈칸 첫번째 값 4니까 (mid-1)/2
+				System.out.print(" "); //빈칸 입력
+			}
+			for(int j=1; j<=i; j++) {
+				System.out.print("*"); //별 입력 i랑 똑같이 반복
+			}
+			System.out.println(); //증가 별
+		}	
 		
+		for(int i=(mid-2); i>=1; i-=2) {
+			for(int j=1; j<=(mid-i)/2; j++) {
+				System.out.print(" "); //빈칸입력
+			}
+			for(int j=1; j<=i; j++) {
+				System.out.print("*");
+			}
+		} System.out.println();
+	
+		
+		sc.close();		
 	}
 }
-
-//모든 행의 갯수는 9개, 홀수가 나와야지 예쁘다 홀수별 그리기
-//절반은 쪼갠다 위-증가별 아래-감소별
-//중간 별의 갯수는 입력받는다
-//위쪽별 9 왼쪽 4공백 *1 3공백 *2 
-//짝수 : 2n 홀수 : 2n +1 또는 2n -1
-//인터넷에 예제가 많다
+*/
